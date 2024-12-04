@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>+SAÚDE</title>
+    <link rel="stylesheet" href="style_pg1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="icon" href="IMG-20241126-WA0013-removebg-preview.png" type="image/png">
+
+     <style> 
+      @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Special+Elite&display=swap');
+     
+       
+      .titulo1{
+        font-family: "Kaushan Script";
+        text-align: center;
+      }
+      .titulo1t{
+        font-family: "Special Elite";
+        text-align: center;
+        font-size: 20px;
+       
+      }
+      .titulo2{
+        font-family: "Kaushan Script";
+      }
+      .titulo2t{
+        font-family: "Special Elite";
+      }
+      #loader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    .spinner {
+      border: 8px solid #f3f3f3;
+      border-top: 8px solid #3498db;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    .imagem-container img {
+      width: 50%; /* Ajuste o tamanho da imagem */
+      height: auto; /* Mantém a proporção da imagem */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra na imagem */
+      border-radius: 10px; /* Deixa as bordas arredondadas (opcional) */
+    }
+     </style>
+  </head>
+  <body style="margin: 0; padding: 0; background-color: whitesmoke !important;">
+
+    <div id="loader">
+      <div class="spinner"></div>
+      <p>Carregando...</p>
+    </div>
+
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid" style="background-color: white;">
+          <span class="navbar-text" style="color: rgba(0, 155, 226, 0.952)"><strong>
+            +SAÚDE
+          </span></strong>
+        </div>
+      </nav>
+      <br>
+      <br>
+      <br>
+      
+      <div>
+        <h1 class="titulo1">QUEM SOMOS</h1> <br>
+
+        <p class="titulo1t">
+            <strong>Somos alunos do curso técnico em Administração da Escola Estadual de Tempo Integral Dr. Antônio de Souza. Nosso projeto explora como a Inteligência Artificial (IA) está transformando a saúde, mostrando sua importância em diagnósticos e tratamentos.
+            <br>
+        </p>
+
+        <p class="titulo1t">
+            Por meio de apresentações, queremos desenvolver o entendimento sobre o impacto da IA na área médica e inspirar reflexões sobre o futuro da tecnologia na saúde.</strong>
+
+        </p>
+      </div>
+
+      <br>
+
+        <a href="index.html"><img style="margin-left: 138px;" src="IMG-20241126-WA0013-removebg-preview.png" alt="Imagem Centralizada" width="110" height="100"></a>
+      
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+
+
+
+
+
+
+    <script>
+      // Esconde o loader e mostra o conteúdo quando a página carregar
+      window.addEventListener("load", function() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("conteudo").style.display = "block";
+      });
+    </script>
+  </body>
+</html>
